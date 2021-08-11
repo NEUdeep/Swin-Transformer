@@ -1,0 +1,2 @@
+python -m torch.distributed.launch --nproc_per_node 2 --master_port 12345 main.py --eval \
+--cfg configs/swin_small_patch4_window7_224.yaml --data-path /workspace/mnt/storage/yankai/imagenet/ImageNet-pytorch --batch-size 64 --resume /workspace/mnt/storage/kanghaidong/cloud_project/basic_files/swin_small_patch4_window7_224.pth
